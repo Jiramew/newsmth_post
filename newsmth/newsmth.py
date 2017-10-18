@@ -2,7 +2,7 @@ import time
 import random
 import requests
 
-from newsmth.config import \
+from .config import \
     INDEX_URL, POST_URL, LOGIN_URL, \
     USERNAME, PASSWORD, \
     SUBJECT, CONTENT, \
@@ -34,9 +34,3 @@ class SmthPost(object):
         self.session.post(POST_URL,
                           data=post_data,
                           headers=HEADERS)
-
-
-if __name__ == '__main__':
-    sp = SmthPost()
-    if sp.login():
-        sp.post_job()
