@@ -1,13 +1,14 @@
 __author__ = 'jiramew'
 
 # Urls
-INDEX_URL = 'http://www.newsmth.net/'
-POST_URL = 'http://www.newsmth.net/nForum/article/CouponsLife/ajax_post.json'
-LOGIN_URL = 'http://www.newsmth.net/nForum/user/ajax_login.json'
+INDEX_URL = 'http://m.newsmth.net/'
+POST_URL = 'http://m.newsmth.net/article/Intern/post'
+LOGIN_URL = 'http://m.newsmth.net/user/login'
+LOGOUT_URL = 'http://m.newsmth.net/user/logout'
 
 # Auth
-USERNAME = 'your username'
-PASSWORD = 'your password'
+USERNAME = ''
+PASSWORD = ''
 
 # Mock
 HEADERS = {
@@ -23,4 +24,5 @@ HEADERS = {
 
 # Content
 SUBJECT = ""
-CONTENT = ""
+CONTENT = '''
+'''

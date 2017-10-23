@@ -22,15 +22,14 @@ class SmthPost(object):
         resp = self.session.post(LOGIN_URL,
                                  data=post_data,
                                  headers=HEADERS)
-        return resp.text.find(u"操作成功") != -1
+        return resp.text.find(u"登陆成功") != -1
 
     def post_job(self):
         post_data = {
             'subject': SUBJECT,
             'content': CONTENT,
-            'signature': -1,
-            'id': USERNAME,
         }
-        self.session.post(POST_URL,
+        resp = self.session.post(POST_URL,
                           data=post_data,
                           headers=HEADERS)
+        return resp
